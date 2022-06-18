@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    width: 90%;
+
+}
+.adicionar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+    width: 90%;
+
+}
+.adicionar #input{
+    height: 40px;
+    flex-grow: 2;
+    border: 2px solid rgb(31, 3, 242);
+    background-color: rgb(114, 178, 234);
+    border-radius: 5%;
+    color: rgb(31, 3, 242);
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+}
+::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(31, 3, 242); 
+    font-size: 16pt;
+    font-weight: 600;
+}
+button {
+    height: 40px;
+    flex-grow: 1;    
+    border-radius: 5%;
+    border: 2px solid rgb(31, 3, 242);
+    background-color: rgb(114, 178, 234);
+    color: rgb(31, 3, 242);
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 15px;
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 16pt;
+    align-items: center;
+}
+.item{
+    display: flex;
+    align-items: center; 
+    height: 40px;
+    width: 100%;
+    border-radius: 5%;
+    border: 2px solid rgb(31, 3, 242);
+    background-color: rgb(114, 178, 234);
+    color: rgb(31, 3, 242);
+    font-size: 16pt;
+    font-weight: 600;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.item input{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.item input:checked ~ label {
+    text-decoration: line-through;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+footer .description{
+    font-weight: 700;
+    align-items: center;
+    margin-bottom: 30px;
+}
+footer .social-media{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    font-size: small;
+    margin-bottom: 10px;
+
+}
+footer .img{
+    margin-left: 15px;
+}
+footer img{
+    width: 20px;
+    height: 20px;
+}
